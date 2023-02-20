@@ -1,0 +1,53 @@
+.digits {
+    display: block;
+    width: 60px;
+    height:60px;
+    background-color: lightgrey;
+    border:none;
+    padding: 10px;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+.keyboardContainer{
+    height:300px;
+    width:200px;
+    margin:0px;
+}
+.keyboard{
+    height: 100%;
+    width:100%;
+    background-color: grey;
+    border-spacing:10px;
+    border-collapse: separate;
+
+}
+.display-box{
+    height:22px;
+    width:100%;
+    padding-top:2px;
+    border :none;
+    background-color: white;
+    margin-bottom: 1px;
+    font-size: 15px;
+}
+
+@media (max-width: 639px) {
+    html, body {
+     height:100vh;
+     width:100%;
+    }
+    .keyboardContainer{
+        height:100vh;
+        width:100%;
+    }
+    .digits {
+        padding: 40px;
+        width: 100%;
+        height:100%;
+      }
+      .display-box{
+        width:100%;
+    }
+  }

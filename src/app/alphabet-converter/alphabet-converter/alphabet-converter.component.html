@@ -1,0 +1,35 @@
+<div class="keyboardContainer">
+    <table class="keyboard" >
+      <tr> 
+        <td colspan="3"> 
+          <div>
+              <input class="display-box" type="text" id="inputNumber" [(ngModel)]= "integerValue"  placeholder="Integer" #integerInput disabled /> <br>
+              <input class="display-box" type="text" id="result" [(ngModel)] = "resultdata" placeholder="Text" disabled /> 
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <!-- display() function displays the value of clicked button -->
+        <td> <input type="button" class="digits" value="1" (click)="display('1')" /> </td>
+        <td> <input type="button" class="digits" value="2" (click)="display('2')" /> </td>
+        <td> <input type="button" class="digits" value="3" (click)="display('3')" /> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" class="digits" value="4" (click)="display('4')" /> </td>
+        <td> <input type="button" class="digits" value="5" (click)="display('5')" /> </td>
+        <td> <input type="button" class="digits" value="6" (click)="display('6')" /> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" class="digits" value="7" (click)="display('7')" /> </td>
+        <td> <input type="button" class="digits" value="8" (click)="display('8')" /> </td>
+        <td> <input type="button" class="digits" value="9" (click)="display('9')" /> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" class="digits" value="#" (click)="display('#')" /> </td>
+        <td> <input type="button" class="digits" value="0" (click)="display('0')" /> </td>
+        <td> <input type="button" class="digits" value="<-" (click)="removeLastCharacter(integerValue)" /> </td>
+      </tr>
+      </table>
+    </div>
+    
+    
